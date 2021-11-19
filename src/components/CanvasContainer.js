@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/CanvasContainer.scss'
-import '../components/Canvas'
+import Canvas from './Canvas'
 
 const CanvasContainer = () => {
   return (

@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import '../styles/App.css';
+import '../styles/App.scss';
 import './CanvasContainer'
 import { Route } from 'react-router-dom';
+import MusicContainer from './MusicContainer'
+import CanvasContainer from './CanvasContainer';
 
 function App() {
   return (
     <div className="App">
-      <MusicContainer />
+      {/* <MusicContainer /> */}
       <CanvasContainer />
     </div>
   );
