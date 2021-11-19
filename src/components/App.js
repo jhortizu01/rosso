@@ -1,5 +1,6 @@
 import '../styles/App.scss';
-import './CanvasContainer'
+import CanvasContainer from './CanvasContainer'
+import MusicContainer from './MusicContainer'
 import { Route } from 'react-router-dom';
 import MusicContainer from './MusicContainer'
 import CanvasContainer from './CanvasContainer';

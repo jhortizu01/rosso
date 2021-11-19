@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect }from 'react'
 import '../styles/Canvas.scss'
 
+
 const Canvas = () => {
   const canvasRef = useRef(null);
   const contextRef = useRef(null);

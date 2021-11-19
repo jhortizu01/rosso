@@ -1,0 +1,56 @@
+.all-tools-container {
+  position: absolute;
+  width: 100%;
+  height: 319px;
+  left: 0px;
+  margin: 0px;
+  background-color: lightgray;
+}
+
+.palette-selector {
+  background-color: white;
+  display: flex;
+}
+
+.hide-palette {
+  width: 74px;
+  height: 63px;
+  margin-left: 35px;
+  margin-top: 1px;
+  border: none;
+  background-color: lightgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-image: url("../assets/Arrow_down.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  padding: 0px;
+}
+
+.color-palette-btn {
+  width: 242px;
+  height: 64px;
+  border: none;
+  background-color: lightgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-left: black 1px solid;
+  border-top: black 1px solid;
+  border-right: black 1px solid;
+}
+
+.tab-plus {
+  width: 74px;
+  height: 63px;
+  border: none;
+  margin-top: 1px;
+  background-color: lightgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-image: url("../assets/math-plus.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  padding: 0px;
+}
