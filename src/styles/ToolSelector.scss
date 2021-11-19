@@ -1,0 +1,72 @@
+.tool-selector {
+  width: 338px;
+  display: flex;
+  margin-right: 17px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selector-top,
+.selector-bottom {
+  width: 338px;
+  height: 102px;
+}
+
+.selector-top {
+  margin-top: 19px;
+}
+
+.selector-bottom {
+  margin-bottom: 36px;
+}
+.tool-btn {
+  width: 79.42px;
+  height: 77.29px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin-left: 21px;
+  border: none;
+}
+
+#paint {
+  background-image: url('../assets/paint-brush.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#bigger {
+  background-image: url('../assets/math-plus.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#smaller {
+  background-image: url('../assets/math-minus.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#erase {
+  background-image: url('../assets/erase.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#contrast {
+  background-image: url('../assets/edit-contrast.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#trash {
+  background-image: url('../assets/trash-empty.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
