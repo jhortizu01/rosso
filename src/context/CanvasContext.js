@@ -6,6 +6,8 @@ export const CanvasContextProvider = (props) => {
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false)
+  const paintRef = useRef('black')
+
 
   const prepareCanvas = () => {
     const canvas = canvasRef.current
@@ -17,7 +19,8 @@ export const CanvasContextProvider = (props) => {
     const context = canvas.getContext("2d")
     context.scale(2, 2);
     context.lineCap = "round";
-    context.strokeStyle = "black";
+    context.strokeStyle = paintRef;
+    console.log(context.strokeStyle)
     context.lineWidth = 5;
     contextRef.current = context;
   }
@@ -50,6 +53,13 @@ export const CanvasContextProvider = (props) => {
     context.fillRect(0, 0, canvas.width, canvas.height)
   }
 
+  const handleSetColor = (event) => {
+    event.preventDefault(); 
+    paintRef.current = event.target.dataset.color;
+   contextRef.current.strokeStyle = paintRef.current
+  }
+
+
   return (
     <CanvasContext.Provider 
       value={{
@@ -59,7 +69,8 @@ export const CanvasContextProvider = (props) => {
         startDrawing,
         finishDrawing,
         draw,
-        clearCanvas
+        clearCanvas,
+        handleSetColor
       }}>
         {props.children}
       </CanvasContext.Provider>

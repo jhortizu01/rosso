@@ -1,7 +1,10 @@
 import React from 'react'
 import '../styles/ToolSelector.scss'
+import { useCanvas } from '../context/CanvasContext'
 
 const ToolSelector = () => {
+ const { clearCanvas } = useCanvas();
+
   return (
     <div className="tool-selector">
       <div className="selector-top">
@@ -12,7 +15,7 @@ const ToolSelector = () => {
       <div className="selector-bottom">
         <button className="tool-btn" id="erase" />
         <button className="tool-btn" id="contrast" />
-        <button className="tool-btn" id="trash" />
+        <button className="tool-btn" id="trash" onClick={() => clearCanvas()}/>
       </div>
     </div>
   )
