@@ -20,7 +20,6 @@ export const CanvasContextProvider = (props) => {
     context.scale(2, 2);
     context.lineCap = "round";
     context.strokeStyle = paintRef;
-    console.log(context.strokeStyle)
     context.lineWidth = 5;
     contextRef.current = context;
   }
