@@ -5,13 +5,13 @@ import Palette2 from './Palette2'
 import Palette3 from './Palette3'
 import ToolSelector from './ToolSelector'
 
-const ToolsContainer = () => {
+const ToolsContainer = ({ toggleSlider }) => {
   return (
     <div className="tools-container">
       <Palette1 />
       {/* <Palette2 /> */}
       {/* <Palette3 /> */}
-      <ToolSelector />
+      <ToolSelector toggleSlider={toggleSlider}/>
     </div>
   )
 }

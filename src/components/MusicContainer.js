@@ -5,6 +5,7 @@ import 'react-h5-audio-player/src/styles.scss'
 import song1 from '../mp3/song1.mp3'
 import song2 from '../mp3/song2.mp3'
 import song3 from '../mp3/song3.mp3'
+import 'animate.css';
 
 const playlist = [song1, song2, song3]
 
@@ -41,30 +42,32 @@ const MusicContainer = () => {
   }
 
   const showHide = hideMusic ?
+  <div>
+    <AudioPlayer
+      style={{display: "none"}}
+      autoPlay
+      src={currentSong}
+      onPlay={e => console.log("onPlay")}
+      onClickPrevious={handleClickPrevious}
+      onClickNext={handleClickNext}
+      showSkipControls={true}
+    />
+  </div> :   
+  <div>  
   <AudioPlayer
-    style={{display: "none"}}
     autoPlay
     src={currentSong}
     onPlay={e => console.log("onPlay")}
     onClickPrevious={handleClickPrevious}
     onClickNext={handleClickNext}
     showSkipControls={true}
-    
-  /> :      
-  <AudioPlayer
-    autoPlay
-    src={currentSong}
-    onPlay={e => console.log("onPlay")}
-    onClickPrevious={handleClickPrevious}
-    onClickNext={handleClickNext}
-    showSkipControls={true}
-
   />
+</div> 
 
   return (
-    <div className="audio">
+    <div className="audio" style={{transition: ".4s"}}>
       {showHide}
-      <button className="toggle-music" onClick={toggleMusic}>Beats</button>
+      <button style={{transition: ".4s"}} className="toggle-music" onClick={toggleMusic}>Beats</button>
     </div>
   )
 }

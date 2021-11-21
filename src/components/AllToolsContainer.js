@@ -3,7 +3,7 @@ import '../styles/AllToolsContainer.scss'
 import ToolsContainer from './ToolsContainer'
 
 
-const AllToolsContainer = () => {
+const AllToolsContainer = ({ toggleSlider, setSliderSize }) => {
  return (
     <div className="all-tools-container">
       <div className="palette-selector">
@@ -13,7 +13,7 @@ const AllToolsContainer = () => {
         <button className="color-palette-btn">Color Palette</button>
         <button className="tab-plus" />
       </div>
-      <ToolsContainer />
+      <ToolsContainer toggleSlider={toggleSlider} setSliderSize={setSliderSize} />
     </div>
  )
 }

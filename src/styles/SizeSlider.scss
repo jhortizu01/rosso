@@ -1,0 +1,22 @@
+.size-slider {
+  position: absolute;
+  width: 257px;
+  height: 147px;
+  border: none;
+  background-color: bisque;
+  bottom: 50px;
+  right: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.size {
+  margin-bottom: 15px;
+}
+
+.size-value {
+  margin-top: 15px;
+}
