@@ -11,6 +11,7 @@ const AllToolsContainer = () => {
         <button className="color-palette-btn">Fire</button>
         <button className="color-palette-btn">Leaf</button>
         <button className="color-palette-btn">Wave</button>
+        <button className="color-palette-btn">Moon</button>
         <button className="tab-plus" />
       </div>
       <ToolsContainer />
