@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/AllToolsContainer.scss'
 import ToolsContainer from './ToolsContainer'
 import { useCanvas } from '../context/CanvasContext'
 
 const AllToolsContainer = () => {
   const { setActivePalette } = useCanvas();
+  const [isVisible, setIsVisible] = useState(true)
+
+  const toggleMenu = () => {
+    setIsVisible(!isVisible);
+  }
+
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -42,7 +48,7 @@ const AllToolsContainer = () => {
  return (
     <div className="all-tools-container">
       <div className="palette-selector">
-        <button className="hide-palette" />
+        <button className="hide-palette" onClick={toggleMenu} />
         <button className="color-palette-btn"  id="fire-palette-btn" onClick={(event) => handleClick(event)}>Fire</button>
         <button className="color-palette-btn"  id="leaf-palette-btn" onClick={(event) => handleClick(event)}>Leaf</button>
         <button className="color-palette-btn"  id="wave-palette-btn" onClick={(event) => handleClick(event)}>Wave</button>
