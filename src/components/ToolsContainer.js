@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useState} from 'react'
 import '../styles/ToolsContainer.scss'
-import Palette1 from './Palette1'
-import Palette2 from './Palette2'
-import Palette3 from './Palette3'
+import FirePalette from './FirePalette';
+import LeafPalette from './LeafPalette';
+import WavePalette from './WavePalette';
+import MoonPalette from './MoonPalette';
+import CustomPalette from './CustomPalette';
 import ToolSelector from './ToolSelector'
+import { useCanvas } from '../context/CanvasContext'
+
 
 const ToolsContainer = () => {
+  const { activePalette } = useCanvas();
+
+  const returnActivePalette = () => {
+    if (activePalette.isFireActive) {
+      console.log('fire')
+      return <FirePalette />;
+    } else if (activePalette.isLeafActive) {
+      return <LeafPalette />;
+    } else if (activePalette.isWaveActive) {
+      return <WavePalette />;
+    } else if (activePalette.isMoonActive) {
+      return <MoonPalette />;
+    }
+  }
+
   return (
     <div className="tools-container">
-      <Palette1 />
-      {/* <Palette2 /> */}
-      {/* <Palette3 /> */}
+      {returnActivePalette()}
       <ToolSelector />
     </div>
   )
