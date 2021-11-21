@@ -1,9 +1,8 @@
 import React from 'react'
 import '../styles/ToolSelector.scss'
 import { useCanvas } from '../context/CanvasContext'
-// import { s
 const ToolSelector = () => {
- const { clearCanvas } = useCanvas();
+ const { clearCanvas, handleSetColor } = useCanvas();
 
   return (
     <div className="tool-selector">

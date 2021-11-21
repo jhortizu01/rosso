@@ -7,7 +7,13 @@ export const CanvasContextProvider = (props) => {
   const contextRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false)
   const paintRef = useRef('black')
-
+  const [activePalette, setActivePalette] = useState({
+    isFireActive: true,
+    isLeafActive: false,
+    isWaveActive: false,
+    isMoonActive: false,
+    isCustomActive: false
+  });
 
   const prepareCanvas = () => {
     const canvas = canvasRef.current
@@ -55,7 +61,7 @@ export const CanvasContextProvider = (props) => {
   const handleSetColor = (event) => {
     event.preventDefault(); 
     paintRef.current = event.target.dataset.color;
-   contextRef.current.strokeStyle = paintRef.current
+    contextRef.current.strokeStyle = paintRef.current
   }
 
 
@@ -69,7 +75,9 @@ export const CanvasContextProvider = (props) => {
         finishDrawing,
         draw,
         clearCanvas,
-        handleSetColor
+        handleSetColor,
+        activePalette,
+        setActivePalette
       }}>
         {props.children}
       </CanvasContext.Provider>
