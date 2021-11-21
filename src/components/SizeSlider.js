@@ -3,7 +3,7 @@ import '../styles/SizeSlider.scss'
 
 
 const SizeSlider = ({ setSliderSize }) => {
-  const [sliderValueState, setSliderValueState] = useState("")
+  const [sliderValueState, setSliderValueState] = useState(10)
 
   const handleSliderChange = (e) => {
     setSliderValueState(e.target.value)

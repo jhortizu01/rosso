@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/ToolSelector.scss'
+import paintBrush from '../assets/paint-brush.svg'
 
 const ToolSelector = ({ toggleSlider }) => {
   
@@ -7,7 +8,13 @@ const ToolSelector = ({ toggleSlider }) => {
   return (
     <div className="tool-selector">
       <div className="selector-top">
-        <button className="tool-btn" id="paint" />
+        <div className="tool-btn" id="fakebtn"/>
+        <button className="tool-btn" id="paint-brush"
+          style={{  
+          webkitMask:  `url(${paintBrush}) no-repeat 50% 50%`,
+          backgroundColor: "pink",
+          mask: `url(${paintBrush}) no-repeat 50% 50%`
+          }} />
         <button className="tool-btn" id="bigger" onClick={toggleSlider} />
         <button className="tool-btn" id="smaller" />
       </div>

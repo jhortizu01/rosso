@@ -29,9 +29,11 @@
   border: none;
 }
 
-#paint {
-  background-image: url('../assets/paint-brush.png');
-  background-repeat: no-repeat;
+#fakebtn {
+  position: absolute;
+}
+
+#paint-brush {
   background-position-x: center;
   background-position-y: center;
 }
