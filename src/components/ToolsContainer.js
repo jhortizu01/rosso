@@ -14,7 +14,6 @@ const ToolsContainer = () => {
 
   const returnActivePalette = () => {
     if (activePalette.isFireActive) {
-      console.log('fire')
       return <FirePalette />;
     } else if (activePalette.isLeafActive) {
       return <LeafPalette />;

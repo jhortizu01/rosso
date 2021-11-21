@@ -3,7 +3,7 @@ import '../styles/AllToolsContainer.scss'
 import { useCanvas } from '../context/CanvasContext'
 
 const PaletteSelector = () => {
-  const { setActivePalette } = useCanvas();
+  const { setActivePalette, setIsMenuVisible } = useCanvas();
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -40,7 +40,7 @@ const PaletteSelector = () => {
 
  return (
       <div className="palette-selector">
-        <button className="hide-palette" onClick={toggleMenu} />
+        <button className="hide-palette" onClick={setIsMenuVisible} />
         <button className="color-palette-btn"  id="fire-palette-btn" onClick={(event) => handleClick(event)}>Fire</button>
         <button className="color-palette-btn"  id="leaf-palette-btn" onClick={(event) => handleClick(event)}>Leaf</button>
         <button className="color-palette-btn"  id="wave-palette-btn" onClick={(event) => handleClick(event)}>Wave</button>

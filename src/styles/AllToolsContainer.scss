@@ -14,6 +14,16 @@
   display: flex;
 }
 
+.all-tools-container.hide {
+  transform: translate3d(0, 36vh, 0);
+}
+ 
+.all-tools-container.show {
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
+
+
 .hide-palette {
   width: 74px;
   height: 63px;

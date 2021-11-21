@@ -14,6 +14,7 @@ export const CanvasContextProvider = (props) => {
     isMoonActive: false,
     isCustomActive: false
   });
+  const [isMenuVisible, setIsMenuVisible] = useState(true)
 
   const prepareCanvas = () => {
     const canvas = canvasRef.current
@@ -77,7 +78,9 @@ export const CanvasContextProvider = (props) => {
         clearCanvas,
         handleSetColor,
         activePalette,
-        setActivePalette
+        setActivePalette,
+        isMenuVisible,
+        setIsMenuVisible
       }}>
         {props.children}
       </CanvasContext.Provider>

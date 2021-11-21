@@ -1,18 +1,21 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/AllToolsContainer.scss'
 import ToolsContainer from './ToolsContainer'
-import { useCanvas } from '../context/CanvasContext'
 import PaletteSelector from './PaletteSelector'
+import { useCanvas } from '../context/CanvasContext'
 
 const AllToolsContainer = () => {
-  const [isVisible, setIsVisible] = useState(true)
+  const { isMenuVisible } = useCanvas();
 
-  const toggleMenu = () => {
-    setIsVisible(!isVisible);
-  }
+  let visibility = "all-tools-container hide";
+  useEffect(() => {
+    if (isMenuVisible) {
+      visibility = "all-tools-container show";
+    }
+  },)
 
  return (
-    <div className="all-tools-container">
+    <div className={visibility}>
       <PaletteSelector />
       <ToolsContainer />
     </div>
