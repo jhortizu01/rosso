@@ -7,6 +7,8 @@ export const CanvasContextProvider = (props) => {
   const contextRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false)
   const paintRef = useRef('black')
+  const [sizeSliderHidden, setSliderHidden] = useState(true)
+  const [sliderValueState, setSliderValueState] = useState(10)
   const [activePalette, setActivePalette] = useState({
     isFireActive: true,
     isLeafActive: false,
@@ -26,7 +28,7 @@ export const CanvasContextProvider = (props) => {
     context.scale(2, 2);
     context.lineCap = "round";
     context.strokeStyle = paintRef;
-    context.lineWidth = 5;
+    context.lineWidth = parseInt(sliderValueState);
     contextRef.current = context;
   }
 
@@ -64,6 +66,15 @@ export const CanvasContextProvider = (props) => {
     contextRef.current.strokeStyle = paintRef.current
   }
 
+  const toggleSlider = () => {
+    if(sizeSliderHidden === true) {
+      setSliderHidden(false)
+      console.log(sizeSliderHidden)
+    } else {
+      setSliderHidden(true)
+      console.log(sizeSliderHidden)
+    }
+  }
 
   return (
     <CanvasContext.Provider 
@@ -77,7 +88,14 @@ export const CanvasContextProvider = (props) => {
         clearCanvas,
         handleSetColor,
         activePalette,
-        setActivePalette
+        setActivePalette,
+        toggleSlider,
+        setSliderSize,
+        sliderSize,
+        sizeSliderHidden,
+        setSliderHidden,
+        paintRef,
+        setSliderValueState
       }}>
         {props.children}
       </CanvasContext.Provider>

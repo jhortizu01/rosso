@@ -1,9 +1,8 @@
 .tools-container {
   position: static;
-  width: 1440px;
+  min-width: fit-content;
   height: 255px;
-  left: 0px;
-  top: 64px;
   display: flex;
   justify-content: space-between;
+  margin-top: 43px;
 }
