@@ -29,18 +29,22 @@
   margin-left: 21px;
   border: none;
   &:hover {
-    border: 3px solid #545454;
+    outline: 3px solid #545454;
     cursor: pointer;
   }
 }
 
 #fakebtn {
   position: absolute;
+    &:hover {
+    outline: 3px solid #545454;
+  }
 }
 
 #paint-brush {
   background-position-x: center;
   background-position-y: center;
+
 }
 
 #bigger {
