@@ -54,7 +54,7 @@ const PaletteSelector = () => {
         <button className="color-palette-btn"  id="leaf-palette-btn" onClick={(event) => handleClick(event)}>Leaf</button>
         <button className="color-palette-btn"  id="wave-palette-btn" onClick={(event) => handleClick(event)}>Wave</button>
         <button className="color-palette-btn"  id="moon-palette-btn" onClick={(event) => handleClick(event)}>Moon</button>
-        <button className="tab-plus" />
+        {/* <button className="tab-plus" /> */}
       </div>
  )
 }
