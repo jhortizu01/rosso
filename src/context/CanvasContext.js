@@ -6,7 +6,8 @@ export const CanvasContextProvider = (props) => {
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false)
-  const paintRef = useRef('black')
+  //const paintRef = useRef('black')
+  const [paintColor, setPaintColorState] = useState('black')
   const [sizeSliderHidden, setSliderHidden] = useState(true)
   const [sliderValueState, setSliderValueState] = useState(10)
   const [activePalette, setActivePalette] = useState({
@@ -29,7 +30,8 @@ export const CanvasContextProvider = (props) => {
     const context = canvas.getContext("2d")
     context.scale(2, 2);
     context.lineCap = "round";
-    context.strokeStyle = paintRef;
+    //context.strokeStyle = paintRef;
+    context.strokeStyle = paintColor;
     context.lineWidth = sliderValueState;
     contextRef.current = context;
   }
@@ -64,8 +66,10 @@ export const CanvasContextProvider = (props) => {
 
   const handleSetColor = (event) => {
     event.preventDefault(); 
-    paintRef.current = event.target.dataset.color;
-    contextRef.current.strokeStyle = paintRef.current
+    //paintRef.current = event.target.dataset.color;
+    setPaintColorState(event.target.dataset.color)
+    //contextRef.current.strokeStyle = paintRef.current
+    contextRef.current.strokeStyle = event.target.dataset.color
   }
 
   const toggleSlider = () => {
@@ -98,7 +102,9 @@ export const CanvasContextProvider = (props) => {
         toggleSlider,
         sizeSliderHidden,
         setSliderHidden,
-        paintRef,
+        //paintRef,
+        paintColor,
+        sliderValueState,
         setSliderValueState
       }}>
         {props.children}

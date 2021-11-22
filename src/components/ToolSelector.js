@@ -4,7 +4,7 @@ import { useCanvas } from '../context/CanvasContext'
 import paintBrush from '../assets/paint-brush.svg'
 
 const ToolSelector = () => {
- const { clearCanvas, handleSetColor, toggleSlider, paintRef } = useCanvas();
+ const { clearCanvas, handleSetColor, toggleSlider, paintColor } = useCanvas();
 
 
   return (
@@ -14,7 +14,7 @@ const ToolSelector = () => {
         <button className="tool-btn" id="paint-brush"
           style={{  
           webkitMask:  `url(${paintBrush}) no-repeat 50% 50%`,
-          backgroundColor: `${paintRef.current}`,
+          backgroundColor: `${paintColor}`,
           mask: `url(${paintBrush}) no-repeat 50% 50%`
           }} />
         <button className="tool-btn" id="bigger" onClick={toggleSlider} />

@@ -8,7 +8,7 @@ const Canvas = () => {
 
  useEffect(() => {
    prepareCanvas();
- }, [paintColor])
+ }, [])
 
   return (
    <canvas

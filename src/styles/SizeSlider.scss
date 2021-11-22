@@ -1,12 +1,12 @@
 .size-slider {
-  position: relative;
-  z-index: 1000;
+  position: absolute;
+  z-index: 999;
   width: 257px;
   height: 147px;
   border: none;
-  background-color: bisque;
-  bottom: 30px;
-  right: -1140px;
+  background-color: lightgrey;
+  bottom: 350px;
+  right: 25px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
