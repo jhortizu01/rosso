@@ -10,6 +10,7 @@ export const CanvasContextProvider = (props) => {
   const [paintColor, setPaintColorState] = useState('black')
   const [sizeSliderHidden, setSliderHidden] = useState(true)
   const [sliderValueState, setSliderValueState] = useState(10)
+  
   const [activePalette, setActivePalette] = useState({
     isFireActive: true,
     isLeafActive: false,
@@ -75,11 +76,14 @@ export const CanvasContextProvider = (props) => {
   const toggleSlider = () => {
     if(sizeSliderHidden === true) {
       setSliderHidden(false)
-      console.log(sizeSliderHidden)
     } else {
       setSliderHidden(true)
-      console.log(sizeSliderHidden)
     }
+  }
+
+  const handleSliderStateChange = (newBrushSize) => {
+    setSliderValueState(newBrushSize);
+    contextRef.current.lineWidth = newBrushSize;
   }
 
   return (
@@ -102,10 +106,10 @@ export const CanvasContextProvider = (props) => {
         toggleSlider,
         sizeSliderHidden,
         setSliderHidden,
-        //paintRef,
         paintColor,
+        setSliderValueState,
         sliderValueState,
-        setSliderValueState
+        handleSliderStateChange
       }}>
         {props.children}
       </CanvasContext.Provider>
