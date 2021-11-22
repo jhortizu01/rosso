@@ -22,7 +22,7 @@ const SizeSlider = () => {
         id="myRange"
         onInput={handleSliderChange}
       />
-      <label className="size-value">{sliderValueState}</label>
+      <label className="size-value">{slider}</label>
     </div>
   )
 }
