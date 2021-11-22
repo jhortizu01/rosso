@@ -9,7 +9,6 @@ export const CanvasContextProvider = (props) => {
   const paintRef = useRef('black')
   const [sizeSliderHidden, setSliderHidden] = useState(true)
   const [sliderValueState, setSliderValueState] = useState(10)
-  // const sliderValueState = useRef(10);
   
   const [activePalette, setActivePalette] = useState({
     isFireActive: true,
@@ -73,10 +72,8 @@ export const CanvasContextProvider = (props) => {
   const toggleSlider = () => {
     if(sizeSliderHidden === true) {
       setSliderHidden(false)
-      console.log(sizeSliderHidden)
     } else {
       setSliderHidden(true)
-      console.log(sizeSliderHidden)
     }
   }
 
