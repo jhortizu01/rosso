@@ -1,0 +1,51 @@
+.palette-1 {
+  width: 988px;
+  height: 194px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 35px;
+}
+
+.color-swatch-1-btn {
+  height: 138px;
+  width: 138px;
+  border-radius: 25px;
+  border: none;
+  padding: 0px;
+}
+
+.swatch {
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 43px;
+}
+
+.color-name {
+  margin-top: 20px;
+}
+
+#fire1 {
+  background-color: #260101;
+}
+
+#fire2 {
+  background-color: #591202;
+}
+
+#fire3 {
+   background-color: #BF3E0F;
+}
+
+#fire4 {
+  background-color: #E31C1C;
+}
+
+#fire5 {
+  background-color: #F29D35;
+}
+
+#fire6 {
+  background-color: #F2C230;
+}

@@ -1,22 +1,39 @@
 .all-tools-container {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 319px;
-  left: 0px;
-  margin: 0px;
+  // margin-top: 50px;
   background-color: lightgray;
+  bottom: 0px;
+  transform: translate3d(0, 44vh, 0);
+  transition: transform .5s
+              cubic-bezier(.25,.1,.25,1);
 }
 
 .palette-selector {
-  background-color: white;
+  position: absolute;
+  top: -63px;
+  // background-color: white;
   display: flex;
+  margin: 0px;
 }
+
+.all-tools-container.hide {
+  transform: translate3d(0, 40vh, 0);
+}
+ 
+.all-tools-container.show {
+  transform: translate3d(0, 5vh, 0);
+  overflow: visible;
+}
+
 
 .hide-palette {
   width: 74px;
   height: 63px;
   margin-left: 35px;
   margin-top: 1px;
+  margin-right: 2px;
   border: none;
   background-color: lightgrey;
   border-top-left-radius: 25px;
@@ -29,15 +46,14 @@
 }
 
 .color-palette-btn {
-  width: 242px;
+  width: 160px;
   height: 64px;
   border: none;
+  margin-right: 2px;
+  margin-left: 2px;
   background-color: lightgrey;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  border-left: black 1px solid;
-  border-top: black 1px solid;
-  border-right: black 1px solid;
 }
 
 .tab-plus {
