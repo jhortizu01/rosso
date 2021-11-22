@@ -78,7 +78,7 @@ export const CanvasContextProvider = (props) => {
   }
 
   const handleSliderStateChange = (newBrushSize) => {
-    setSliderValueState(newBrushSize)
+    setSliderValueState(newBrushSize);
     contextRef.current.lineWidth = newBrushSize;
   }
 
