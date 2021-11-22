@@ -68,32 +68,32 @@ export const waveSwatch = [
   {
     id: "wave1",
     hex: "#012340",
-    color_name: ""
+    color_name: "La Sirena"
   },
   {
     id: "wave2",
     hex: "#053553",
-    color_name: ""
+    color_name: "Hidden Coastline"
   },
   {
     id: "wave3",
     hex: "#3478A1",
-    color_name: ""
+    color_name: "Grandpa's Glasses"
   },
   {
     id: "wave4",
     hex: "#2594D9",
-    color_name: ""
+    color_name: "Moroccan Breeze"
   },
   {
     id: "wave5",
     hex: "#5783F5",
-    color_name: ""
+    color_name: "Sugar Plum"
   },
   {
     id: "wave6",
     hex: "#3148BE",
-    color_name: ""
+    color_name: "Royal Jasper"
   }
 ]
 
@@ -101,32 +101,32 @@ export const  moonSwatch = [
   {
     id: "moon1",
     hex: "#111111",
-    color_name: ""
+    color_name: "Wolf's Bane"
   },
   {
     id: "moon2",
     hex: "#262626",
-    color_name: ""
+    color_name: "Hallowed Ground"
   },
   {
     id: "moon3",
     hex: "#595959",
-    color_name: ""
+    color_name: "Humble Earth"
   },
   {
     id: "moon4",
     hex: "#716D88",
-    color_name: ""
+    color_name: "Silver Fox"
   },
   {
     id: "moon5",
     hex: "#88778B",
-    color_name: ""
+    color_name: "Lovelorn's Hope"
   },
   {
     id: "moon6",
     hex: "#433688",
-    color_name: ""
+    color_name: "Obscure Sorrow"
   }
 ]
 

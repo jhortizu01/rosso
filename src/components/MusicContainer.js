@@ -8,7 +8,7 @@ import song3 from '../mp3/song3.mp3'
 import 'animate.css';
 import arrowDown from '../assets/Arrow_down.png'
 import arrowUp from '../assets/Arrow_up.png'
-126R4EYTBG4E21E
+
 const playlist = [song1, song2, song3]
 
 const MusicContainer = () => {
@@ -77,7 +77,7 @@ const MusicContainer = () => {
         <p className="beats">Beats</p> 
         {arrow}
       </buQtton>
-    </div>`E1``
+    </div>
   )
 }
 
