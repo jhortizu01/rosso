@@ -15,6 +15,7 @@ const Canvas = () => {
       onMouseDown={startDrawing}
       onMouseUp={finishDrawing}
       onMouseMove={draw}
+      onMouseLeave={finishDrawing}
       ref={canvasRef}
     />
   )

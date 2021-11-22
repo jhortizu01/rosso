@@ -5,7 +5,6 @@ import 'react-h5-audio-player/src/styles.scss'
 import song1 from '../mp3/song1.mp3'
 import song2 from '../mp3/song2.mp3'
 import song3 from '../mp3/song3.mp3'
-import 'animate.css';
 import arrowDown from '../assets/Arrow_down.png'
 import arrowUp from '../assets/Arrow_up.png'
 

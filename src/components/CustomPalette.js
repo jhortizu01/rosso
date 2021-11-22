@@ -1,3 +1,0 @@
-
-const CustomPalette = (params) => {
-}

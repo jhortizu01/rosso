@@ -4,7 +4,6 @@ import FirePalette from './FirePalette';
 import LeafPalette from './LeafPalette';
 import WavePalette from './WavePalette';
 import MoonPalette from './MoonPalette';
-import CustomPalette from './CustomPalette';
 import ToolSelector from './ToolSelector'
 import { useCanvas } from '../context/CanvasContext'
 
@@ -14,7 +13,6 @@ const ToolsContainer = () => {
 
   const returnActivePalette = () => {
     if (activePalette.isFireActive) {
-      console.log('fire')
       return <FirePalette />;
     } else if (activePalette.isLeafActive) {
       return <LeafPalette />;

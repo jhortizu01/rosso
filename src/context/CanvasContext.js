@@ -17,6 +17,8 @@ export const CanvasContextProvider = (props) => {
     isMoonActive: false,
     isCustomActive: false
   });
+  const [isMenuVisible, setIsMenuVisible] = useState(true)
+  const [menuVisibility, setMenuVisibility] = useState("all-tools-container show")
 
   const prepareCanvas = () => {
     const canvas = canvasRef.current
@@ -93,6 +95,10 @@ export const CanvasContextProvider = (props) => {
         handleSetColor,
         activePalette,
         setActivePalette,
+        isMenuVisible,
+        setIsMenuVisible,
+        menuVisibility,
+        setMenuVisibility,
         toggleSlider,
         sizeSliderHidden,
         setSliderHidden,
