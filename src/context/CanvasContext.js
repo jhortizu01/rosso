@@ -28,7 +28,7 @@ export const CanvasContextProvider = (props) => {
     context.scale(2, 2);
     context.lineCap = "round";
     context.strokeStyle = paintRef;
-    context.lineWidth = parseInt(sliderValueState);
+    context.lineWidth = sliderValueState;
     contextRef.current = context;
   }
 
@@ -90,8 +90,6 @@ export const CanvasContextProvider = (props) => {
         activePalette,
         setActivePalette,
         toggleSlider,
-        setSliderSize,
-        sliderSize,
         sizeSliderHidden,
         setSliderHidden,
         paintRef,

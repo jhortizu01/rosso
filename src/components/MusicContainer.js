@@ -6,6 +6,8 @@ import song1 from '../mp3/song1.mp3'
 import song2 from '../mp3/song2.mp3'
 import song3 from '../mp3/song3.mp3'
 import 'animate.css';
+import arrowDown from '../assets/Arrow_down.png'
+import arrowUp from '../assets/Arrow_up.png'
 
 const playlist = [song1, song2, song3]
 
@@ -64,10 +66,17 @@ const MusicContainer = () => {
   />
 </div> 
 
+  const arrow = hideMusic ? 
+  <img className="arrow" src={arrowDown} alt="arrow"/> :
+  <img className="arrow" src={arrowUp} alt="arrow"/>
+
   return (
-    <div className="audio" style={{transition: ".4s"}}>
+    <div className="audio">
       {showHide}
-      <button style={{transition: ".4s"}} className="toggle-music" onClick={toggleMusic}>Beats</button>
+      <button className="toggle-music"  onClick={toggleMusic}>
+        <p className="beats">Beats</p> 
+        {arrow}
+      </button>
     </div>
   )
 }

@@ -14,8 +14,16 @@
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   font-size: 20px;
-  background-image: url('../assets/Arrow_down.png');
-  background-repeat: no-repeat;
-  background-position-x: 85%;
-  background-position-y: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.beats {
+  margin-right: 90px;
+}
+
+.arrow {
+  margin-right: 25px;
 }
