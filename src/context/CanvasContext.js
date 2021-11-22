@@ -15,6 +15,7 @@ export const CanvasContextProvider = (props) => {
     isCustomActive: false
   });
   const [isMenuVisible, setIsMenuVisible] = useState(true)
+  const [menuVisibility, setMenuVisibility] = useState("all-tools-container show")
 
   const prepareCanvas = () => {
     const canvas = canvasRef.current
@@ -65,7 +66,6 @@ export const CanvasContextProvider = (props) => {
     contextRef.current.strokeStyle = paintRef.current
   }
 
-
   return (
     <CanvasContext.Provider 
       value={{
@@ -80,7 +80,9 @@ export const CanvasContextProvider = (props) => {
         activePalette,
         setActivePalette,
         isMenuVisible,
-        setIsMenuVisible
+        setIsMenuVisible,
+        menuVisibility,
+        setMenuVisibility
       }}>
         {props.children}
       </CanvasContext.Provider>

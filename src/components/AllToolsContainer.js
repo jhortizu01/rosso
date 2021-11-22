@@ -5,17 +5,10 @@ import PaletteSelector from './PaletteSelector'
 import { useCanvas } from '../context/CanvasContext'
 
 const AllToolsContainer = () => {
-  const { isMenuVisible } = useCanvas();
-
-  let visibility = "all-tools-container hide";
-  useEffect(() => {
-    if (isMenuVisible) {
-      visibility = "all-tools-container show";
-    }
-  },)
+  const { menuVisibility } = useCanvas();
 
  return (
-    <div className={visibility}>
+    <div className={menuVisibility}>
       <PaletteSelector />
       <ToolsContainer />
     </div>
