@@ -43,6 +43,10 @@
   background-position-x: center;
   background-position-y: center;
   padding: 0px;
+  &:hover {
+    border: 3px solid #545454;
+    cursor: pointer;
+  }
 }
 
 .color-palette-btn {
@@ -54,6 +58,10 @@
   background-color: lightgrey;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  &:hover {
+    border: 3px solid #545454;
+    cursor: pointer;
+  }
 }
 
 .tab-plus {

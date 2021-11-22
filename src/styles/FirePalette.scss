@@ -12,6 +12,11 @@
   border-radius: 25px;
   border: none;
   padding: 0px;
+  &:hover {
+    border: 3px solid #545454;
+    cursor: pointer;
+  }
+
 }
 
 .swatch {

@@ -70,10 +70,10 @@ const MusicContainer = () => {
   return (
     <div className="audio">
       {showHide}
-      <buQtton className="toggle-music"  onClick={toggleMusic}>
+      <button className="toggle-music"  onClick={toggleMusic}>
         <p className="beats">Beats</p> 
         {arrow}
-      </buQtton>
+      </button>
     </div>
   )
 }
