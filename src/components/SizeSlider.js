@@ -4,11 +4,12 @@ import { useCanvas  } from '../context/CanvasContext'
 
 
 const SizeSlider = () => {
-  const { setSliderValueState, sliderValueState } = useCanvas()
+  const { setSliderValueState, sliderValueState, handleSliderStateChange } = useCanvas();
 
   const handleSliderChange = (e) => {
-    setSliderValueState(e.target.value)
-    console.log(sliderValueState)
+    handleSliderStateChange(parseInt(e.target.value));
+    console.log('handleSliderChange')
+    console.log('range value', e.target.value)
   }
 
   return (
@@ -19,7 +20,7 @@ const SizeSlider = () => {
         type="range" 
         min="1" 
         max="20"
-        defaultValue="10"
+        // defaultValue="10"
         value={sliderValueState} 
         id="myRange"
         onInput={handleSliderChange}

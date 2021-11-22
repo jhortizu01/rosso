@@ -46,7 +46,6 @@ const MusicContainer = () => {
   <div>
     <AudioPlayer
       style={{display: "none"}}
-      autoPlay
       src={currentSong}
       onPlay={e => console.log("onPlay")}
       onClickPrevious={handleClickPrevious}
@@ -56,7 +55,6 @@ const MusicContainer = () => {
   </div> :   
   <div>  
   <AudioPlayer
-    autoPlay
     src={currentSong}
     onPlay={e => console.log("onPlay")}
     onClickPrevious={handleClickPrevious}

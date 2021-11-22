@@ -9,6 +9,8 @@ export const CanvasContextProvider = (props) => {
   const paintRef = useRef('black')
   const [sizeSliderHidden, setSliderHidden] = useState(true)
   const [sliderValueState, setSliderValueState] = useState(10)
+  // const sliderValueState = useRef(10);
+  
   const [activePalette, setActivePalette] = useState({
     isFireActive: true,
     isLeafActive: false,
@@ -78,6 +80,11 @@ export const CanvasContextProvider = (props) => {
     }
   }
 
+  const handleSliderStateChange = (newBrushSize) => {
+    setSliderValueState(newBrushSize)
+    contextRef.current.lineWidth = newBrushSize;
+  }
+
   return (
     <CanvasContext.Provider 
       value={{
@@ -99,7 +106,9 @@ export const CanvasContextProvider = (props) => {
         sizeSliderHidden,
         setSliderHidden,
         paintRef,
-        setSliderValueState
+        setSliderValueState,
+        sliderValueState,
+        handleSliderStateChange
       }}>
         {props.children}
       </CanvasContext.Provider>
