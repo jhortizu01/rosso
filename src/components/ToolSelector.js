@@ -9,21 +9,24 @@ const ToolSelector = () => {
 
   return (
     <div className="tool-selector">
-      <div className="selector-top">
-        <div className="tool-btn" id="fakebtn"/>
-        <button className="tool-btn" id="paint-brush"
+      <section>
+        <div className="long-btn" id="fakebtn"/>
+        <button className="long-btn" id="paint-brush"
           style={{  
           webkitMask:  `url(${paintBrush}) no-repeat 50% 50%`,
           backgroundColor: `${paintColor}`,
           mask: `url(${paintBrush}) no-repeat 50% 50%`}} />
-        <button className="tool-btn" id="bigger" onClick={toggleSlider} />
-        <button className="tool-btn" id="smaller" />
-      </div>
-      <div className="selector-bottom">
-        <button className="tool-btn" id="erase" onClick={(event) => handleSetColor(event)} data-color="#FFFFFF"/>
-        <button className="tool-btn" id="contrast" />
-        <button className="tool-btn" id="trash" onClick={() => clearCanvas()}/>
-      </div>
+      </section>
+      <section className="small-buttons">
+        <div className="selector-top">
+          <button className="tool-btn" id="paint-bucket"/>
+          <button className="tool-btn" id="size-selector" onClick={toggleSlider} />
+        </div>
+        <div className="selector-bottom">
+          <button className="tool-btn" id="erase" onClick={(event) => handleSetColor(event)} data-color="#FFFFFF"/>
+          <button className="tool-btn" id="trash" onClick={() => clearCanvas()}/>
+        </div>
+      </section>
     </div>
   )
 }

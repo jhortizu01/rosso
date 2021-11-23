@@ -13,13 +13,14 @@
 .palette-selector {
   position: absolute;
   top: -63px;
+  width: fit-content;
   // background-color: white;
   display: flex;
   margin: 0px;
 }
 
 .all-tools-container.hide {
-  transform: translate3d(0, 40vh, 0);
+  transform: translate3d(0, 45vh, 0);
 }
  
 .all-tools-container.show {
@@ -27,8 +28,7 @@
   overflow: visible;
 }
 
-
-.hide-palette {
+.hide-palette.arrow-down {
   width: 74px;
   height: 63px;
   margin-left: 35px;
@@ -49,7 +49,43 @@
   }
 }
 
-.color-palette-btn {
+.hide-palette.arrow-up {
+  width: 74px;
+  height: 63px;
+  margin-left: 35px;
+  margin-top: 1px;
+  margin-right: 2px;
+  border: none;
+  background-color: lightgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-image: url("../assets/Arrow_up.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  padding: 0px;
+  &:hover {
+    outline: 3px solid #545454;
+    cursor: pointer;
+  }
+}
+
+.color-palette-btn.not-active {
+  width: 160px;
+  height: 64px;
+  border: none;
+  margin-right: 2px;
+  margin-left: 2px;
+  background-color: #545454;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  &:hover {
+    outline: 3px solid #545454;
+    cursor: pointer;
+  }
+}
+
+.color-palette-btn.active {
   width: 160px;
   height: 64px;
   border: none;
@@ -59,9 +95,66 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   &:hover {
-    outline: 3px solid #545454;
+    outline: 3px solid lightgrey;
     cursor: pointer;
   }
+}
+
+.color-palette-btn.fire-active {
+  background-image: url('../assets/fire-active.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.color-palette-btn.fire-inactive {
+  background-image: url('../assets/fire-inactive.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.color-palette-btn.leaf-inactive {
+  background-image: url('../assets/leaf-inactive.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.color-palette-btn.leaf-active {
+  background-image: url('../assets/leaf-active.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+
+.color-palette-btn.moon-active {
+  background-image: url('../assets/moon-active.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.color-palette-btn.moon-inactive {
+  background-image: url('../assets/moon-inactive.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.color-palette-btn.wave-inactive {
+  background-image: url('../assets/wave-inactive.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.color-palette-btn.wave-active {
+  background-image: url('../assets/wave-active.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .tab-plus {
@@ -78,3 +171,4 @@
   background-position-y: center;
   padding: 0px;
 }
+
