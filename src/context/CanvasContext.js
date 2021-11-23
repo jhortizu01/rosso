@@ -17,6 +17,14 @@ export const CanvasContextProvider = (props) => {
     isMoonActive: false,
     isCustomActive: false
   });
+
+  const [activeTab, setActiveTab] = useState({
+    fireTabIsActive: "color-palette-btn active fire-active",
+    leafTabIsActive: "color-palette-btn not-active leaf-inactive",
+    waveTabIsActive: "color-palette-btn not-active wave-inactive",
+    moonTabIsActive: "color-palette-btn not-active moon-inactive"
+  })
+
   const [isMenuVisible, setIsMenuVisible] = useState(true)
   const [menuVisibility, setMenuVisibility] = useState("all-tools-container show")
 
@@ -108,7 +116,9 @@ export const CanvasContextProvider = (props) => {
         paintColor,
         setSliderValueState,
         sliderValueState,
-        handleSliderStateChange
+        handleSliderStateChange,
+        activeTab, 
+        setActiveTab
       }}>
         {props.children}
       </CanvasContext.Provider>
