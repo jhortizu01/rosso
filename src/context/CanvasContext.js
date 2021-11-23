@@ -64,8 +64,11 @@ export const CanvasContextProvider = (props) => {
   }
 
   const handleSetColor = (event) => {
-    event.preventDefault(); 
-    setPaintColorState(event.target.dataset.color)
+    if (event.target.dataset.color === "#FFFFFF") {
+      setPaintColorState('black')
+    } else {
+      setPaintColorState(event.target.dataset.color)
+    }
     contextRef.current.strokeStyle = event.target.dataset.color
   }
 
