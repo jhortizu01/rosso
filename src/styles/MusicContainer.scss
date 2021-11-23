@@ -1,9 +1,33 @@
-.audio {
+.audio.hide {
   position: absolute;
   width: 350px;
   height: fit-content;
   left: 70%;
   z-index: 1000;
+  transform: translate3d(0, -13vh, 0);
+  transition: transform .5s
+  cubic-bezier(.25,.1,.25,1);
+}
+
+.audio.show {
+  position: absolute;
+  width: 350px;
+  height: fit-content;
+  left: 70%;
+  z-index: 1000;
+  transform: translate3d(0, 0vh, 0);
+  overflow: visible;
+  transition: transform .5s
+  cubic-bezier(.25,.1,.25,1);
+}
+
+.arrow-direction.up {
+  margin-right: 25px;
+  transform: rotate(180deg)
+}
+
+.arrow-direction.down {
+  margin-right: 25px;
 }
 
 .toggle-music {
@@ -18,10 +42,14 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  &:hover {
+    outline: 3px solid lightgrey;
+    cursor: pointer;
+  }
 }
 
 .beats {
-  margin-right: 90px;
+  margin-right: 80px;
 }
 
 .arrow {

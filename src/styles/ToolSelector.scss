@@ -1,10 +1,11 @@
 .tool-selector {
   width: 338px;
   display: flex;
-  margin-right: 75px;
+  margin-left: 45px;
+ // margin-right: 75px;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+ // flex-wrap: wrap;
+ // justify-content: center;
   padding-top: 15px;
 }
 
@@ -21,33 +22,43 @@
 .selector-bottom {
   margin-bottom: 36px;
 }
+
 .tool-btn {
   width: 79.42px;
   height: 77.29px;
   background: #FFFFFF;
-  border-radius: 50%;
+  border-radius: 15px;
   margin-left: 21px;
   border: none;
+  &:hover {
+    outline: 3px solid #545454;
+    cursor: pointer;
+  }
 }
 
 #fakebtn {
   position: absolute;
+    &:hover {
+    outline: 3px solid #545454;
+  }
+}
+
+.long-btn {
+  height: 176px;
+  width: 81px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  margin-top: 22px;
 }
 
 #paint-brush {
   background-position-x: center;
   background-position-y: center;
+
 }
 
-#bigger {
-  background-image: url('../assets/math-plus.svg');
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
-
-#smaller {
-  background-image: url('../assets/math-minus.svg');
+#size-selector {
+  background-image: url('../assets/size-selector.png');
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -69,6 +80,13 @@
 
 #trash {
   background-image: url('../assets/trash-empty.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#paint-bucket {
+  background-image: url('../assets/bucket.png');
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
