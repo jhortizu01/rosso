@@ -1,8 +1,10 @@
-.more {
-  font-family: 'Shippori Antique', sans-serif;
+.landing-content-3{
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: fit-content;
+  margin-bottom: 50px;
 }

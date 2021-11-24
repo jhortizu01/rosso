@@ -1,0 +1,58 @@
+.abe-container {
+  width: 325px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+.abe-img {
+  border-radius: 50%;
+  height: 400px;
+  width: 325px;
+  object-fit: cover;
+}
+
+.abe-title {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.style {
+  height: 5px;
+  width: 75px;
+  background-color: black;
+}
+
+.ux {
+  margin-bottom: 0px;
+}
+
+.designer {
+  margin-top: 0px;
+}
+
+.button-links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.abe-links {
+  background-color: rgb(30, 38, 38);
+  border: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+// #abe {
+//   margin-bottom: 200px;
+// }

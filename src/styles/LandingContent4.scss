@@ -1,5 +1,5 @@
 .landing-content-4 {
-  height: 75vh;
+  height: fit-content;
   background-color: rosybrown;
   display: flex;
   flex-direction: column;
@@ -34,4 +34,9 @@
   font-family: 'Playfair Display', serif;
   width: 300px;
   text-align: center;
+}
+
+.mintbean {
+  width: 250px;
+  height: auto;
 }
