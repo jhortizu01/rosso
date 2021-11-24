@@ -39,27 +39,18 @@ To run the application locally:
 
 You can see this application on the following link:
 
-[Rosso]([DEPLOYED LINK)
+[Rosso](https://rosso-paint.herokuapp.com/)
 
 
 ## Illustrations
-![Rosso Screenshots]([SCREENSHOTS)
-<iframe
-    width="640"
-    height="480"
-    src="https://www.youtube.com/watch?v=QxPJBebYJ4Q&t=3s"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
 
+<img src="https://i.ibb.co/C2GXh2H/demo-Spark-Video-1.gif" alt="demo-Spark-Video-1" width="500px" />
 
 ## Wins
 
 - This was our first time participating in a hackathon
 - Fixing multiple bugs related to state and styling
-- First time working with a dedicatd UI/UX Designer on the team
+- First time working with a dedicated UI/UX Designer on the team
 
 ## Challenges
 
