@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/LandingPageNav.scss'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import rosso from '../assets/rosso2.png'
 import { HashLink } from 'react-router-hash-link';
 

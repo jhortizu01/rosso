@@ -8,7 +8,7 @@ export const CanvasContextProvider = (props) => {
   const [isDrawing, setIsDrawing] = useState(false)
   const [paintColor, setPaintColorState] = useState('black')
   const [sizeSliderHidden, setSliderHidden] = useState(true)
-  const [sliderValueState, setSliderValueState] = useState(10)
+  const [sliderValueState, setSliderValueState] = useState(15)
   const [isMenuVisible, setIsMenuVisible] = useState(true)
   const [menuVisibility, setMenuVisibility] = useState("all-tools-container show")
   const [activeTool, setActiveTool] = useState("brush");

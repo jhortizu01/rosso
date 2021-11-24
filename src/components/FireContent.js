@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 const FireContent = () => {
   return (
     <div className="fire-content">
-      <ScrollAnimation animateIn="fadeIn" duration="3">
+      <ScrollAnimation animateIn="fadeIn" duration={3}>
         <section className="fire-description">
           <img src={fire} alt="fire icon" className="fire"/>
           <div className="styling" />

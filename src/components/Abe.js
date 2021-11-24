@@ -5,7 +5,7 @@ import '../styles/Abe.scss'
 const Abe = () => {
   return (
     <div className="abe-container">
-      <img src={abe} alt="image of abe" className="abe-img" />
+      <img src={abe} alt="Abe" className="abe-img" />
       <p className="abe-title">Abe T.</p>
       <div className="style" />
       <h2 className="ux">UX/UI</h2>
@@ -15,9 +15,9 @@ const Abe = () => {
         <p>I've created logos, websites and marketing material for various clients in the healthcare, entertainment, and transportation/logistics industries.</p>
         <p>Follow me on insta at @abvrram.</p>
       </section>
-      <section class="button-links">
-        <a href="https://www.nviernodesign.com"><button className="abe-links">Portfolio</button></a>
+      <section className="button-links">
         <a href="https://linkedin.com/in/abetrevinoatx"><button className="abe-links" id="abe">LinkedIn</button></a>
+        <a href="https://www.nviernodesign.com"><button className="abe-links">Portfolio</button></a>
       </section>
     </div>
   )

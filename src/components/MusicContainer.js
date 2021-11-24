@@ -12,17 +12,17 @@ import { useCanvas } from '../context/CanvasContext'
 
 const playlist = [fireSounds, leafSounds, waterSounds, moonSounds ]
 const playlistTitles = [
-  "Wind In The Reeds (Great Gobi National Park, Mongolia)",
+  "Wind In The Reeds (Great Gobi Nat'l Park, Mongolia)",
   "Gentle Stream and Autumn (Ashiu Forest, Kyoto, Japan)",
-  "Drift Ice (Shiretoko National Park, Hokkaido, Japan)",
-  "Gentle Night (Kasungu National Park, Malawi)"
+  "Drift Ice (Shiretoko Nat'l Park, Hokkaido, Japan)",
+  "Gentle Night (Kasungu Nat'l Park, Malawi)"
 ]
 
 const MusicContainer = () => {
   const [currentSong, setCurrentSong] = useState(playlist[0])
   const [musicVisibility, setMusicVisibility] = useState("audio hide")
   const [arrowDirection, setArrowDirection] = useState("arrow-direction down")
-  const [currentTitle, setCurrentTitle] = useState("Wind In The Reeds (Great Gobi National Park, Mongolia)");
+  const [currentTitle, setCurrentTitle] = useState("Wind In The Reeds (Great Gobi Nat'l Park, Mongolia)");
   const { activePalette } = useCanvas()
 
   useEffect(() => {
