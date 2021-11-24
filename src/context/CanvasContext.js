@@ -17,8 +17,7 @@ export const CanvasContextProvider = (props) => {
     isFireActive: true,
     isLeafActive: false,
     isWaveActive: false,
-    isMoonActive: false,
-    isCustomActive: false
+    isMoonActive: false
   });
 
   const [activeTab, setActiveTab] = useState({
