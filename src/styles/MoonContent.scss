@@ -1,0 +1,44 @@
+.moon-content {
+  background-image: url('../assets/moon-background.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.moon {
+  height: 75px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.moon-styling {
+  height: 5px;
+  width: 50px; 
+  background-color: white;
+  margin-top: 10px;
+}
+
+.moon-title {
+  font-family: 'Shippori Antique', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.moon-palette-img {
+  width: 90%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.moon-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+}

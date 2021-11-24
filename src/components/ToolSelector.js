@@ -4,22 +4,19 @@ import { useCanvas } from '../context/CanvasContext'
 import paintBrush from '../assets/paint-brush.svg'
 
 const ToolSelector = () => {
- const { clearCanvas, handleSetColor, toggleSlider, paintColor, setActiveTool } = useCanvas();
+ const { clearCanvas, handleSetColor, toggleSlider, paintColor } = useCanvas();
 
 
   return (
     <div className="tool-selector">
-      <section>
-        <div className="long-btn" id="fakebtn"/>
-        <button className="long-btn" id="paint-brush"
+      <section className="small-buttons">
+        <div className="selector-top">
+        <div className="tool-btn" id="fakebtn"/>
+        <button className="tool-btn" id="paint-brush"
           style={{  
           webkitMask:  `url(${paintBrush}) no-repeat 50% 50%`,
           backgroundColor: `${paintColor}`,
-          mask: `url(${paintBrush}) no-repeat 50% 50%`}} onClick={() => setActiveTool("brush")} />
-      </section>
-      <section className="small-buttons">
-        <div className="selector-top">
-          <button className="tool-btn" id="paint-bucket" onClick={() => setActiveTool("lines")} />
+          mask: `url(${paintBrush}) no-repeat 50% 50%`}} />
           <button className="tool-btn" id="size-selector" onClick={toggleSlider} />
         </div>
         <div className="selector-bottom">

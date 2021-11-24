@@ -1,0 +1,28 @@
+nav {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 150px;
+  align-items: center;
+}
+
+p {
+  margin-left: 8px;
+  margin-right: 8px;
+  color: black;
+}
+
+h1 {
+  margin-left: 150px;
+}
+
+.logo {
+  margin-left: 50px;
+}

@@ -1,13 +1,15 @@
 import '../styles/App.scss';
+import LandingPage from './Main'
 import CanvasContainer from './CanvasContainer'
 import MusicContainer from './MusicContainer'
-import { Route } from 'react-router-dom';
+import Main from './Main';
+import { Route } from 'react-router-dom'
+
 
 function App() {
   return (
     <div className="App">
-      <MusicContainer />
-        <CanvasContainer />
+      <Main />
     </div>
   );
 }

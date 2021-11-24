@@ -1,0 +1,41 @@
+.fire-content {
+  background-image: url('../assets/fire-background.png');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fire {
+  height: 75px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.styling {
+  height: 5px;
+  width: 50px; 
+  background-color: orange;
+  margin-top: 10px;
+}
+
+.fire-title {
+  font-family: 'Shippori Antique', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fire-palette-img {
+  margin-top: 50px;
+  width: 90%;
+  height: auto;
+}
+
+.fire-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+}
