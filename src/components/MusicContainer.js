@@ -90,12 +90,11 @@ const MusicContainer = () => {
     <div className={musicVisibility}>
       <AudioPlayer
       src={currentSong}
-      onPlay={e => console.log("onPlay")}
       onClickPrevious={handleClickPrevious}
       onClickNext={handleClickNext}
       showSkipControls={true}
       showJumpControls={false}
-      autoPlay
+      autoPlay={true}
       />
     <button className="toggle-music"  onClick={toggleMusic}>
       <p className="songTitle">{currentTitle}</p>
