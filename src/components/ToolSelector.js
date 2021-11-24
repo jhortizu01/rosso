@@ -14,7 +14,7 @@ const ToolSelector = () => {
         <div className="tool-btn" id="fakebtn"/>
         <button className="tool-btn" id="paint-brush"
           style={{  
-          webkitMask:  `url(${paintBrush}) no-repeat 50% 50%`,
+          WebkitMask:  `url(${paintBrush}) no-repeat 50% 50%`,
           backgroundColor: `${paintColor}`,
           mask: `url(${paintBrush}) no-repeat 50% 50%`}} />
           <button className="tool-btn" id="size-selector" onClick={toggleSlider} />

@@ -15,7 +15,7 @@ Mintbean.io Hackathon (November 15 - November 23, 2021)
 - [Project Specs](#Project-Specs)
 
 ## Abstract
-
+The challenge for this Mint Bean Hackathon was to create an app that users can make art in a visual format. Rosso allows users to draw free form lines in varying thickness, choose a color to paint with from 4 different color palettes based on earth themes, listen to soothing nature sounds in order to feel the colors, as well as have the ability to make happy accidents (aka erase parts of their drawing). The landing page gives users a feel for the app and a chance to meet the creators.
 
 ## Technologies
 
@@ -26,27 +26,31 @@ Mintbean.io Hackathon (November 15 - November 23, 2021)
 - React Router
 - ContextAPI
 - Hooks
-
+- NPM
 
 ## Install and Set Up
 
-To run the application:
+To run the application locally:
+
+1) Clone down repo
+2) Run `npm install`
+3) Run `npm start`
+4) The browser will open up a new window with the app!
 
 You can see this application on the following link:
 
-[Rosso]([DEPLOYED LINK)
-
+[Rosso](https://rosso-paint.herokuapp.com/)
 
 
 ## Illustrations
-![Rosso Screenshots]([SCREENSHOTS)
 
+<img src="https://i.ibb.co/C2GXh2H/demo-Spark-Video-1.gif" alt="demo-Spark-Video-1" width="500px" />
 
 ## Wins
 
 - This was our first time participating in a hackathon
 - Fixing multiple bugs related to state and styling
-- First time working with a dedicatd UI/UX Designer on the team
+- First time working with a dedicated UI/UX Designer on the team
 
 ## Challenges
 

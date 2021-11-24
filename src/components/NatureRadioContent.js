@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/NatureRadioContent.scss'
-import { NavLink } from 'react-router-dom'
 import radioLogo from '../assets/radio-logo.png'
 
 const NatureRadioContent = () => {

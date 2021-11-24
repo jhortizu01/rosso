@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React from 'react'
 import '../styles/ToolsContainer.scss'
 import FirePalette from './FirePalette';
 import LeafPalette from './LeafPalette';

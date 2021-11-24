@@ -18,13 +18,6 @@ const PaletteSelector = () => {
     activePalette: ""
   };
 
-  const activeTab = {
-    fireTabIsActive: "color-palette-btn active fire-active",
-    leafTabIsActive: "color-palette-btn not-active",
-    waveTabIsActive: "color-palette-btn not-active",
-    moonTabIsActive: "color-palette-btn not-active"
-  }
-
     switch (event.target.id) {
       case 'fire-palette-btn':
         setActivePalette({...noPalettesActive, isFireActive: true})
