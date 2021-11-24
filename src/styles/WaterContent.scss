@@ -1,0 +1,43 @@
+.water-content {
+  background-image: url('../assets/water-background.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.water {
+  height: 75px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.water-styling {
+  height: 5px;
+  width: 50px; 
+  background-color: darkturquoise;
+  margin-top: 10px;
+}
+
+.water-title {
+  font-family: 'Shippori Antique', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.water-palette-img {
+  width: 90%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.water-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+}

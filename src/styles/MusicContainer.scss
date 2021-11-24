@@ -4,7 +4,7 @@
   height: fit-content;
   left: 70%;
   z-index: 1000;
-  transform: translate3d(0, -13vh, 0);
+  transform: translate3d(0, -88px, 0);
   transition: transform .5s
   cubic-bezier(.25,.1,.25,1);
 }
@@ -48,8 +48,8 @@
   }
 }
 
-.beats {
-  margin-right: 80px;
+.songTitle {
+  margin-right: 10px;
 }
 
 .arrow {

@@ -1,0 +1,31 @@
+.footer {
+  height: 72px;
+  width: 100%;
+  background-color: dimgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// .footer-styling {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-around;
+  
+// }
+
+.rosso2 {
+  height: 75px;
+}
+
+.icons {
+  height: 40px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.images {
+  margin-right: 25px;
+}

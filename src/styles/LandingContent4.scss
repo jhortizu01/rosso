@@ -1,0 +1,42 @@
+.landing-content-4 {
+  height: fit-content;
+  background-color: rosybrown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zen-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 75px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.zen-title-2 {
+  color: white;
+  font-size: 35px;
+  margin-top: 0px;
+}
+
+.zen-button {
+  background-color: rgb(30, 38, 38);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 160px;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+
+.disclaimer {
+  font-family: 'Playfair Display', serif;
+  width: 300px;
+  text-align: center;
+}
+
+.mintbean {
+  width: 250px;
+  height: auto;
+}
