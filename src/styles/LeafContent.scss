@@ -1,0 +1,40 @@
+.leaf-content {
+  background-image: url('../assets/leaf-background.jpeg');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaf {
+  height: 75px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.leaf-styling {
+  height: 5px;
+  width: 50px; 
+  background-color: green;
+  margin-top: 10px;
+}
+
+.leaf-title {
+  font-family: 'Shippori Antique', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.leaf-palette-img {
+  width: 90%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.leaf-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+}

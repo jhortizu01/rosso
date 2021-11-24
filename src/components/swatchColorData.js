@@ -12,7 +12,7 @@ export const fireSwatch = [
   {
     id: "fire3",
     hex: "#BF3E0F",
-    color_name: "Soft Embers"
+    color_name: "Crackling Embers"
   },
   {
     id: "fire4",
@@ -27,7 +27,7 @@ export const fireSwatch = [
   {
     id: "fire6",
     hex: "#F2C230",
-    color_name: "Golden Sand"
+    color_name: "Lemon Meringue"
   }
 ]
 
@@ -45,22 +45,22 @@ export const leafSwatch = [
   {
     id: "leaf3",
     hex: "#3E5915",
-    color_name: "Blooming Moss"
+    color_name: "Evergreen Pines"
   },
   {
     id: "leaf4",
     hex: "#548C1C",
-    color_name: "Evergreen Pines"
+    color_name: "Crushed Mint"
   },
   {
     id: "leaf5",
     hex: "#E1BF45",
-    color_name: "First Light"
+    color_name: "Golden Sands"
   },
   {
     id: "leaf6",
     hex: "#6DC3AF",
-    color_name: "Fresh Mint"
+    color_name: "Lapping Seafoam"
   }
 ]
 
@@ -88,7 +88,7 @@ export const waveSwatch = [
   {
     id: "wave5",
     hex: "#5783F5",
-    color_name: "Sugar Plum"
+    color_name: "Little Seashell"
   },
   {
     id: "wave6",
