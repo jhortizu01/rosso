@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 const LeafContent = () => {
   return (
     <div className="leaf-content">
-      <ScrollAnimation animateIn="fadeIn" duration="3">
+      <ScrollAnimation animateIn="fadeIn" duration={3}>
         <section className="leaf-description">
           <img src={leaf} alt="leaf icon" className="leaf"/>
           <div className="leaf-styling" />

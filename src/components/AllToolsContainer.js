@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../styles/AllToolsContainer.scss'
 import ToolsContainer from './ToolsContainer'
 import PaletteSelector from './PaletteSelector'

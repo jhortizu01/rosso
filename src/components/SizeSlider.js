@@ -17,7 +17,7 @@ const SizeSlider = () => {
         className="slider" 
         type="range" 
         min="1" 
-        max="20"
+        max="30"
         value={sliderValueState} 
         id="myRange"
         onInput={handleSliderChange}

@@ -1,10 +1,10 @@
-import React, { useContext, useEffect }from 'react'
+import React, { useEffect }from 'react'
 import '../styles/Canvas.scss'
-import { useCanvas, CanvasContext } from '../context/CanvasContext'
+import { useCanvas } from '../context/CanvasContext'
 
 
 const Canvas = () => {
- const { prepareCanvas, contextRef, canvasRef, startDrawing, finishDrawing, draw, paintColor } = useCanvas();
+ const { prepareCanvas, canvasRef, startDrawing, finishDrawing, draw } = useCanvas();
 
  useEffect(() => {
    prepareCanvas();

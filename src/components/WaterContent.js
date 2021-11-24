@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 const WaterContent = () => {
   return (
     <div className="water-content">
-      <ScrollAnimation animateIn="fadeIn" duration="3">
+      <ScrollAnimation animateIn="fadeIn" duration={3}>
       <section className="water-description">
         <img src={water} alt="water icon" className="water"/>
         <div className="water-styling" />

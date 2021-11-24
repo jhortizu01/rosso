@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 const MoonContent = () => {
   return (
     <div className="moon-content">
-      <ScrollAnimation animateIn="fadeIn" duration="3">
+      <ScrollAnimation animateIn="fadeIn" duration={3}>
         <section className="moon-description">
           <img src={moon} alt="moon icon" className="moon"/>
           <div className="moon-styling" />
