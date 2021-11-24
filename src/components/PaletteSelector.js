@@ -3,7 +3,7 @@ import '../styles/AllToolsContainer.scss'
 import { useCanvas } from '../context/CanvasContext'
 
 const PaletteSelector = () => {
-  const { setActivePalette, isMenuVisible, setIsMenuVisible, setMenuVisibility, activeTab, setActiveTab } = useCanvas();
+  const { setActivePalette, isMenuVisible, setIsMenuVisible, setMenuVisibility, activeTab, setActiveTab, paletteSelectorVisibility, setPaletteSelectorVisibility } = useCanvas();
 
   const [paletteArrow, setPaletteArrow] = useState("hide-palette arrow-down")
 
@@ -70,16 +70,17 @@ const PaletteSelector = () => {
     if (isMenuVisible) {
       setMenuVisibility("all-tools-container hide")
       setPaletteArrow("hide-palette arrow-up")
+      setPaletteSelectorVisibility("palette-selector collapse")
     } else {
       setMenuVisibility("all-tools-container show")
       setPaletteArrow("hide-palette arrow-down")
-
+      setPaletteSelectorVisibility("palette-selector")
     }
   }
 
 
  return (
-      <div className="palette-selector">
+      <div className={paletteSelectorVisibility}>
         <button className={paletteArrow} onClick={() => toggleMenu()} />
         <button className={activeTab.fireTabIsActive}  id="fire-palette-btn" onClick={(event) => handleClick(event)}/>
         <button className={activeTab.leafTabIsActive}  id="leaf-palette-btn" onClick={(event) => handleClick(event)} />

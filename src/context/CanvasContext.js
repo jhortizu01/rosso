@@ -12,6 +12,7 @@ export const CanvasContextProvider = (props) => {
   const [isMenuVisible, setIsMenuVisible] = useState(true)
   const [menuVisibility, setMenuVisibility] = useState("all-tools-container show")
   const [activeTool, setActiveTool] = useState("brush");
+  const [paletteSelectorVisibility, setPaletteSelectorVisibility] = useState("palette-selector")
 
   const [activePalette, setActivePalette] = useState({
     isFireActive: true,
@@ -121,7 +122,9 @@ export const CanvasContextProvider = (props) => {
         activeTab, 
         setActiveTab,
         activeTool,
-        setActiveTool
+        setActiveTool,
+        paletteSelectorVisibility,
+        setPaletteSelectorVisibility
       }}>
         {props.children}
       </CanvasContext.Provider>

@@ -8,9 +8,12 @@ const AllToolsContainer = () => {
   const { menuVisibility } = useCanvas();
 
  return (
-    <div className={menuVisibility}>
+   <div>
       <PaletteSelector />
-      <ToolsContainer />
+    <div className={menuVisibility}>
+      <div className='scrollbox'>
+      <ToolsContainer /></div>
+    </div>
     </div>
  )
 }

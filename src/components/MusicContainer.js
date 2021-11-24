@@ -25,26 +25,6 @@ const MusicContainer = () => {
   const [currentTitle, setCurrentTitle] = useState("Wind In The Reeds (Great Gobi Nat'l Park, Mongolia)");
   const { activePalette } = useCanvas()
 
-  useEffect(() => {
-    playSongWithCorrespondingPalette();
-  }, [activePalette])
-  
-  const playSongWithCorrespondingPalette = () => {
-    if (activePalette.isFireActive === true) {
-      setCurrentSong(playlist[0])
-       setCurrentTitle(playlistTitles[0])
-    } else if (activePalette.isLeafActive === true) {
-      setCurrentSong(playlist[1])
-       setCurrentTitle(playlistTitles[1])
-    } else if (activePalette.isWaveActive === true) {
-      setCurrentSong(playlist[2])
-       setCurrentTitle(playlistTitles[2])
-    } else if (activePalette.isMoonActive === true) {
-      setCurrentSong(playlist[3])
-       setCurrentTitle(playlistTitles[3])
-    }
-  }
-
   const handleClickPrevious = () => {
     if(currentSong === playlist[0]) {
       setCurrentSong(playlist[3])
