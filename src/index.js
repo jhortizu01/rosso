@@ -7,7 +7,9 @@ import { CanvasContextProvider } from "./context/CanvasContext";
 
 
 ReactDOM.render(
+  <BrowserRouter>
     <CanvasContextProvider>
         <App />
-    </CanvasContextProvider>, document.getElementById('root')
+    </CanvasContextProvider>
+  </BrowserRouter>, document.getElementById('root')
 );

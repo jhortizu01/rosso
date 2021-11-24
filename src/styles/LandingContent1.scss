@@ -1,0 +1,43 @@
+.landingcontent1 {
+  height: 100vh;
+  background-image: url('../assets/background1.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explanation1 {
+  font-family: 'Playfair Display', serif;
+  background: rgb(204, 204, 204, 0.25);
+  color: white;
+  width: 600px;
+  height: 600px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-title-1 {
+  margin: 0px;
+  font-size: 85px;
+  word-break: keep-all;
+  text-align: center;
+}
+
+.description-1 {
+  width: 350px;
+  margin-bottom: 25px;
+}
+
+.get-started {
+  border: none;
+  background-color: white;
+  height: 50px;
+  width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 50px;
+}
