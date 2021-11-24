@@ -9,41 +9,47 @@ import moonSounds from '../mp3/Kasungu_Night.mp3'
 import arrow from '../assets/Arrow_down.png'
 
 const playlist = [fireSounds, leafSounds, waterSounds, moonSounds ]
+const playlistTitles = [
+  "Wind In The Reeds (Great Gobi National Park, Mongolia)",
+  "Rain and Birds (Royal Manas National Park, Bhutan)",
+  "Drift Ice (Shiretoko National Park, Hokkaido, Japan)",
+  "Night (Kasungu National Park, Malawi)"
+]
 
 const MusicContainer = () => {
   const [currentSong, setCurrentSong] = useState(playlist[0])
   const [musicVisibility, setMusicVisibility] = useState("audio hide")
   const [arrowDirection, setArrowDirection] = useState("arrow-direction down")
+  const [currentTitle, setCurrentTitle] = useState("Wind In The Reeds (Great Gobi National Park, Mongolia)");
 
   const handleClickPrevious = () => {
     if(currentSong === playlist[0]) {
-      setCurrentSong(playlist[5])
+      setCurrentSong(playlist[3])
+      setCurrentTitle(playlistTitles[3])
     } else if (currentSong === playlist[1]) {
       setCurrentSong(playlist[0])
+      setCurrentTitle(playlistTitles[0])
     } else if (currentSong === playlist[2]) {
       setCurrentSong(playlist[1])
+      setCurrentTitle(playlistTitles[1])
     } else if (currentSong === playlist[3]) {
       setCurrentSong(playlist[2])
-    } else if (currentSong === playlist[4]) {
-      setCurrentSong(playlist[3])
-    } else if (currentSong === playlist[5]) {
-      setCurrentSong(playlist[4])
-    }
-  }
+      setCurrentTitle(playlistTitles[2])
+  }}
 
   const handleClickNext = () => {
     if(currentSong === playlist[0]) {
       setCurrentSong(playlist[1])
+      setCurrentTitle(playlistTitles[1])
     } else if (currentSong === playlist[1]) {
       setCurrentSong(playlist[2]) 
+      setCurrentTitle(playlistTitles[2])
     } else if (currentSong === playlist[2]){
       setCurrentSong(playlist[3])
+      setCurrentTitle(playlistTitles[3])
     } else if (currentSong === playlist[3]){
-      setCurrentSong(playlist[4])
-    } else if (currentSong === playlist[4]){
-      setCurrentSong(playlist[5]) 
-    } else if (currentSong === playlist[5]){
       setCurrentSong(playlist[0])
+      setCurrentTitle(playlistTitles[0])
     }
   }
 
@@ -66,9 +72,10 @@ const MusicContainer = () => {
       onClickNext={handleClickNext}
       showSkipControls={true}
       showJumpControls={false}
+      autoPlay
       />
     <button className="toggle-music"  onClick={toggleMusic}>
-      <p className="beats">Beats</p> 
+      <p className="songTitle">{currentTitle}</p>
       <img src={arrow} alt="arrow" className={arrowDirection} />
     </button>
     </div>
