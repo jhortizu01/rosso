@@ -4,17 +4,24 @@
   height: 319px;
   background-color: lightgray;
   bottom: 0px;
-  transform: translate3d(0, 318px, 0);
   transition: transform .5s
               cubic-bezier(.25,.1,.25,1);
 }
 
 .palette-selector {
-  position: absolute;
-  top: -63px;
+  position: fixed;
   width: fit-content;
   display: flex;
   margin: 0px;
+  bottom: 0px;
+  transform: translate3d(0, -284px, 0);
+    transition: transform .5s
+              cubic-bezier(.25,.1,.25,1);
+}
+
+.palette-selector.collapse {
+    transform: translate3d(0, 0, 0);
+
 }
 
 .all-tools-container.hide {
@@ -23,7 +30,7 @@
  
 .all-tools-container.show {
   transform: translate3d(0, 35px, 0);
-  overflow: visible;
+  overflow-x: scroll;
 }
 
 .hide-palette.arrow-down {
