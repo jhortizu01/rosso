@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../styles/MusicContainer.scss'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/src/styles.scss'
@@ -7,8 +7,6 @@ import leafSounds from '../mp3/AshiuForest_River_Nov2018.mp3'
 import waterSounds from '../mp3/Drift Ice at Shiretoko 2.mp3'
 import moonSounds from '../mp3/Kasungu_Night.mp3'
 import arrow from '../assets/Arrow_down.png'
-import { useCanvas } from '../context/CanvasContext'
-
 
 const playlist = [fireSounds, leafSounds, waterSounds, moonSounds ]
 const playlistTitles = [
@@ -23,7 +21,6 @@ const MusicContainer = () => {
   const [musicVisibility, setMusicVisibility] = useState("audio hide")
   const [arrowDirection, setArrowDirection] = useState("arrow-direction down")
   const [currentTitle, setCurrentTitle] = useState("Wind In The Reeds (Great Gobi Nat'l Park, Mongolia)");
-  const { activePalette } = useCanvas()
 
   const handleClickPrevious = () => {
     if(currentSong === playlist[0]) {

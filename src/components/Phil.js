@@ -17,8 +17,8 @@ const Phil = () => {
       <p>Feel free to reach out to me on LinkedIn or view my GitHub.</p>
     </section>
     <section className="button-links">
-      <a href="https://www.linkedin.com/in/phil-hortizuela/"><button className="phil-links">LinkedIn</button></a>
-      <a href="https://github.com/jhortizu01"><button className="phil-links">GitHub</button></a>
+      <a href="https://www.linkedin.com/in/philongthan/"><button className="phil-links">LinkedIn</button></a>
+      <a href="https://github.com/pthan1"><button className="phil-links">GitHub</button></a>
     </section>
   </div>
   )
